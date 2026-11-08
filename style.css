@@ -43,4 +43,7 @@ h3{font:600 1.15rem var(--serif);margin:0 0 4px}
 .quote cite{font-style:normal;opacity:.8;font-size:.95rem}
 address{font-style:normal;margin:20px 0;line-height:1.8}
 footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+.svc-img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px;margin-bottom:14px;background:var(--mist)}
+.svc-img-lead{max-width:480px;margin:8px 0 20px}
+.photo-credits{font-size:.8rem;margin-top:24px}
 @media(max-width:760px){.about{grid-template-columns:1fr;gap:32px}.services-list li{grid-template-columns:1fr}.meta{text-align:left}.hero{padding:72px 0}}
