@@ -16,6 +16,7 @@ nav a[aria-current="page"]{color:var(--jade-dark);font-weight:600;border-bottom:
 .btn{display:inline-block;background:var(--lotus);color:#fff;padding:12px 24px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem}
 .btn:hover{background:var(--lotus-dark)}
 .hero{background:rgba(66,33,40,.72);border-bottom:4px solid var(--coral);color:#f5eef0;padding:110px 0 100px}
+.hero-logo{display:block;width:220px;max-width:60vw;height:auto;margin:0 auto 24px}
 .hero h1{font:500 clamp(2.6rem,7vw,4.8rem)/1.05 var(--serif);margin:0 0 20px;letter-spacing:-.01em}
 .hero p{font:italic 1.5rem/1.4 var(--serif);margin:0 0 36px;max-width:28ch;color:#f2c9d3}
 .hero .btn{background:var(--lotus)}
