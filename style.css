@@ -45,12 +45,8 @@ address{font-style:normal;margin:20px 0;line-height:1.8}
 footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
 .svc-img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px;margin-bottom:14px;background:var(--mist)}
 .svc-img-lead{max-width:560px;aspect-ratio:auto;margin:8px 0 20px}
-.svc-divider{display:flex;align-items:flex-end;justify-content:center;gap:12px;margin:44px auto;max-width:720px}
-.svc-divider img{display:block;height:34px;width:auto;flex:none;margin-bottom:12px}
-.svc-curve{flex:1;max-width:280px;min-width:90px;height:auto;aspect-ratio:5/1;overflow:visible}
-.svc-curve path{fill:none;stroke:var(--lotus);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;opacity:.8}
-.svc-curve path.v{stroke-width:.8;opacity:.55}
-.svc-curve-r{transform:scaleX(-1)}
+.svc-divider{margin:44px auto;max-width:720px}
+.svc-divider img{display:block;width:100%;height:auto}
 .therapies{margin-top:20px}
 .therapy{display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:32px;align-items:center}
 .therapy .svc-img{margin-bottom:0}
