@@ -12,7 +12,7 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 nav{display:flex;gap:22px;flex-wrap:wrap}
 nav a{text-decoration:none;color:var(--ink);font-size:1.125rem;padding-bottom:2px}
 nav a:hover{color:var(--lotus-dark)}
-nav a[href*="cliniko"]{background:#f2c4d4;color:var(--jade);font-weight:600;padding:6px 16px;border-radius:999px;border:1px solid #e3a3bb}
+nav a[href*="cliniko"]{background:#f2c4d4;color:var(--jade);font-weight:600;padding:6px 16px;border-radius:999px;border:1px solid #e3a3bb;white-space:nowrap;letter-spacing:.03em}
 nav a[href*="cliniko"]:hover,nav a[href*="cliniko"]:focus-visible{background:#e9aec4;color:var(--jade-dark)}
 nav a[aria-current="page"]{color:var(--jade-dark);font-weight:600;border-bottom:2px solid var(--lotus)}
 .btn{display:inline-block;background:var(--lotus);color:#fff;padding:12px 24px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem}
