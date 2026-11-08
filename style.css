@@ -51,4 +51,6 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 .therapy{display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:32px;align-items:center}
 .therapy .svc-img{margin-bottom:0}
 .photo-credits{font-size:.8rem;margin-top:24px}
-@media(max-width:760px){.therapy{grid-template-columns:1fr;gap:16px}.svc-divider{margin:32px 0}.about{grid-template-columns:1fr;gap:32px}.services-list li{grid-template-columns:1fr}.meta{text-align:left}.hero{padding:72px 0}}
+.blog-empty{text-align:center}
+.blog-empty .lede{margin:0 auto}
+@media(max-width:760px){nav{gap:14px}.therapy{grid-template-columns:1fr;gap:16px}.svc-divider{margin:32px 0}.about{grid-template-columns:1fr;gap:32px}.services-list li{grid-template-columns:1fr}.meta{text-align:left}.hero{padding:72px 0}}
