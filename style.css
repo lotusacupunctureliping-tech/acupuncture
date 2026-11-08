@@ -9,8 +9,8 @@ header.top{border-bottom:1px solid var(--line);background:var(--paper);position:
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
 .brand{display:inline-flex;align-items:center;gap:10px;font:600 1.25rem/1.2 var(--serif);color:var(--jade-dark);text-decoration:none}
 .brand-mark{display:block;height:40px;width:auto}
-nav{display:flex;gap:22px;flex-wrap:wrap}
-nav a{text-decoration:none;color:var(--ink);font-size:1.125rem;padding-bottom:2px}
+nav{display:flex;gap:22px;flex-wrap:wrap;align-items:center}
+nav a{text-decoration:none;color:var(--ink);font-size:1.125rem;padding:2px 0;line-height:1.4}
 nav a:hover{color:var(--lotus-dark)}
 nav a[href*="cliniko"]{background:#f2c4d4;color:var(--jade);font-weight:600;padding:6px 16px;border-radius:999px;border:1px solid #e3a3bb;white-space:nowrap;letter-spacing:.03em}
 nav a[href*="cliniko"]:hover,nav a[href*="cliniko"]:focus-visible{background:#e9aec4;color:var(--jade-dark)}
