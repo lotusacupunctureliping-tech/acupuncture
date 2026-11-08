@@ -45,5 +45,11 @@ address{font-style:normal;margin:20px 0;line-height:1.8}
 footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
 .svc-img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px;margin-bottom:14px;background:var(--mist)}
 .svc-img-lead{max-width:560px;aspect-ratio:auto;margin:8px 0 20px}
+.svc-divider{display:flex;align-items:center;gap:14px;margin:44px 0}
+.svc-divider img{display:block;height:34px;width:auto;flex:none}
+.svc-divider span{flex:1;height:1px;background:linear-gradient(90deg,var(--lotus),rgba(201,133,130,.25))}
+.therapies{margin-top:20px}
+.therapy{display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:32px;align-items:center}
+.therapy .svc-img{margin-bottom:0}
 .photo-credits{font-size:.8rem;margin-top:24px}
-@media(max-width:760px){.about{grid-template-columns:1fr;gap:32px}.services-list li{grid-template-columns:1fr}.meta{text-align:left}.hero{padding:72px 0}}
+@media(max-width:760px){.therapy{grid-template-columns:1fr;gap:16px}.svc-divider{margin:32px 0}.about{grid-template-columns:1fr;gap:32px}.services-list li{grid-template-columns:1fr}.meta{text-align:left}.hero{padding:72px 0}}
