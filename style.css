@@ -59,7 +59,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 .blog-empty .lede{margin:0 auto}
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:#f2d7d3 url("images/pink-lotus-bg.jpg?v=pink2") center/cover no-repeat}
 @media(min-aspect-ratio:3/4){body::before{background:linear-gradient(90deg,#f2d7d3 0,#f2d7d3 calc(100% - 56.25vh),rgba(242,215,211,0) calc(100% - 42vh)),url("images/pink-lotus-bg.jpg?v=pink2") right top/auto 100% no-repeat,#f2d7d3}}
-header.top{background:rgba(251,238,243,.92)}
+header.top{background:#fbeef3}
 section>.wrap{background:rgba(251,238,243,.9);border-radius:14px;padding-top:36px;padding-bottom:36px}
 .focus{background:transparent}
 .quote>.wrap{background:transparent}
