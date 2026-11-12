@@ -14,6 +14,7 @@ nav a{text-decoration:none;color:var(--ink);font-size:1.125rem;padding:2px 0;lin
 nav a:hover{color:var(--lotus-dark)}
 nav a[href*="cliniko"]{background:#f2c4d4;color:var(--jade);font-weight:600;padding:6px 16px;border-radius:999px;border:1px solid #e3a3bb;white-space:nowrap;letter-spacing:.03em}
 nav a[href*="cliniko"]:hover,nav a[href*="cliniko"]:focus-visible{background:#e9aec4;color:var(--jade-dark)}
+nav a.nav-call{color:var(--jade);font-weight:600;padding:6px 16px;border-radius:999px;border:1px solid #e3a3bb;background:#fff;white-space:nowrap;letter-spacing:.03em}nav a.nav-call:hover,nav a.nav-call:focus-visible{background:#fde7ef;color:var(--jade-dark)}.call-short{display:none}@media(max-width:760px){.call-num{display:none}.call-short{display:inline}nav a[href*="cliniko"],nav a.nav-call{padding:6px 12px}}
 nav a[aria-current="page"]{color:var(--jade-dark);font-weight:600;border-bottom:2px solid var(--lotus)}
 .btn{display:inline-block;background:var(--lotus);color:#fff;padding:12px 24px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem}
 .btn:hover{background:var(--lotus-dark)}
