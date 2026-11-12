@@ -7,7 +7,7 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--lotus);outline-offset
 .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
 header.top{border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0;z-index:5}
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:24px;padding-bottom:24px;flex-wrap:wrap}
-.brand{display:inline-flex;align-items:center;gap:12px;font:600 1.75rem/1.2 var(--serif);color:var(--jade-dark);text-decoration:none}
+.brand{display:inline-flex;align-items:center;gap:12px;font:600 clamp(1.25rem,6vw,1.75rem)/1.2 var(--serif);white-space:nowrap;color:var(--jade-dark);text-decoration:none}
 .brand-mark{display:block;height:58px;width:auto;transform:translateY(-17px)}
 nav{display:flex;gap:22px;flex-wrap:wrap;align-items:center}
 nav a{text-decoration:none;color:var(--ink);font-size:1.125rem;padding:2px 0;line-height:1.4}
