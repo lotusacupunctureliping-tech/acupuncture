@@ -87,3 +87,8 @@ footer{background:rgba(251,238,243,.9)}
 .aacma-block{display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap;margin-top:8px}
 .aacma-block img{display:block;width:160px;height:auto;flex-shrink:0}
 @media(max-width:760px){.aacma-block{flex-direction:column;gap:16px}.aacma-block img{width:130px}}
+
+.insurance{margin-top:48px}
+.fund-badges{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-wrap:wrap;gap:10px}
+.fund-badges li{border:1px solid var(--coral);color:var(--jade-dark);padding:8px 16px;border-radius:999px;font-size:.95rem;background:var(--paper);font-weight:600;letter-spacing:.02em}
+.fund-badges .hicaps-badge{background:var(--mist);border-color:var(--lotus)}
