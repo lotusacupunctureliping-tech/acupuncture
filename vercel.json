@@ -1,20 +1,20 @@
 {
   "redirects": [
-    { "source": "/about", "destination": "/about.html", "permanent": true },
-    { "source": "/services", "destination": "/services.html", "permanent": true },
-    { "source": "/blog", "destination": "/blog.html", "permanent": true },
-    { "source": "/contact", "destination": "/contact.html", "permanent": true },
-    { "source": "/pricing-plans", "destination": "/services.html", "permanent": true },
-    { "source": "/gift-card", "destination": "/", "permanent": true },
-    { "source": "/podcast", "destination": "/blog.html", "permanent": true },
-    { "source": "/booking-calendar/:path*", "destination": "https://lotus-acupuncture-glenelg.au4.cliniko.com/bookings", "permanent": true },
-    { "source": "/service-page/:path*", "destination": "/services.html", "permanent": true },
-    { "source": "/acupuncture/:path*", "destination": "/services.html", "permanent": true },
-    { "source": "/treatments/:path*", "destination": "/services.html", "permanent": true },
-    { "source": "/fertility/:path*", "destination": "/services.html", "permanent": true },
-    { "source": "/pregnancy/:path*", "destination": "/services.html", "permanent": true },
-    { "source": "/health/:path*", "destination": "/services.html", "permanent": true },
-    { "source": "/medicine/:path*", "destination": "/services.html", "permanent": true },
-    { "source": "/contact/contact.html", "destination": "/contact.html", "permanent": true }
+    { "source": "/about{/}?", "destination": "/about.html", "permanent": true },
+    { "source": "/services{/}?", "destination": "/services.html", "permanent": true },
+    { "source": "/blog{/}?", "destination": "/blog.html", "permanent": true },
+    { "source": "/contact{/}?", "destination": "/contact.html", "permanent": true },
+    { "source": "/pricing-plans{/}?", "destination": "/services.html", "permanent": true },
+    { "source": "/gift-card{/}?", "destination": "/", "permanent": true },
+    { "source": "/podcast{/}?", "destination": "/blog.html", "permanent": true },
+    { "source": "/booking-calendar/:path*{/}?", "destination": "https://lotus-acupuncture-glenelg.au4.cliniko.com/bookings", "permanent": true },
+    { "source": "/service-page/:path*{/}?", "destination": "/services.html", "permanent": true },
+    { "source": "/acupuncture/:path*{/}?", "destination": "/services.html", "permanent": true },
+    { "source": "/treatments/:path*{/}?", "destination": "/services.html", "permanent": true },
+    { "source": "/fertility/:path*{/}?", "destination": "/services.html", "permanent": true },
+    { "source": "/pregnancy/:path*{/}?", "destination": "/services.html", "permanent": true },
+    { "source": "/health/:path*{/}?", "destination": "/services.html", "permanent": true },
+    { "source": "/medicine/:path*{/}?", "destination": "/services.html", "permanent": true },
+    { "source": "/contact/contact.html{/}?", "destination": "/contact.html", "permanent": true }
   ]
 }
