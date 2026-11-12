@@ -92,3 +92,10 @@ footer{background:rgba(251,238,243,.9)}
 .fund-badges{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-wrap:wrap;gap:10px}
 .fund-badges li{border:1px solid var(--coral);color:var(--jade-dark);padding:8px 16px;border-radius:999px;font-size:.95rem;background:var(--paper);font-weight:600;letter-spacing:.02em}
 .fund-badges .hicaps-badge{background:var(--mist);border-color:var(--lotus)}
+
+.footer-creds{display:flex;align-items:center;gap:16px 20px;flex-wrap:wrap}
+.footer-ahpra{text-decoration:none;color:var(--jade-dark)}
+.ahpra-badge{display:inline-block;border:1px solid var(--coral);background:var(--paper);color:var(--jade-dark);padding:8px 14px;border-radius:999px;font-size:.8rem;font-weight:600;line-height:1.25;text-align:center}
+.ahpra-badge span{display:block;font-weight:500;font-size:.68rem;color:var(--muted);margin-top:2px;letter-spacing:0}
+.footer-ahpra:hover .ahpra-badge{border-color:var(--lotus);color:var(--lotus-dark)}
+.reg-block{margin-top:8px}
