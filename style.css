@@ -79,3 +79,11 @@ footer{background:rgba(251,238,243,.9)}
 .post-body li{margin-bottom:8px}
 .post-back{margin:0 0 20px;font-size:.95rem}
 .disclaimer{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+
+.footer-bar{display:flex;align-items:center;justify-content:space-between;gap:16px 24px;flex-wrap:wrap}
+.footer-aacma{display:inline-flex;align-items:center;gap:10px;color:var(--jade-dark);text-decoration:none;font-size:.85rem;font-weight:600}
+.footer-aacma img{display:block;height:64px;width:auto}
+.footer-aacma:hover{color:var(--lotus-dark)}
+.aacma-block{display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap;margin-top:8px}
+.aacma-block img{display:block;width:160px;height:auto;flex-shrink:0}
+@media(max-width:760px){.aacma-block{flex-direction:column;gap:16px}.aacma-block img{width:130px}}
