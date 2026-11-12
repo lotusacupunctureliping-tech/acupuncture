@@ -66,3 +66,16 @@ section>.wrap{background:rgba(251,238,243,.9);border-radius:14px;padding-top:36p
 .focus>.wrap{background:rgba(246,221,231,.92)}
 footer{background:rgba(251,238,243,.9)}
 @media(max-width:760px){nav a{font-size:1.0625rem}section{padding:40px 0}section>.wrap{border-radius:10px;margin:0 12px}nav{gap:14px}.therapy{grid-template-columns:1fr;gap:16px}.svc-divider{margin:32px 0}.about{grid-template-columns:1fr;gap:32px}.services-list li{grid-template-columns:1fr}.meta{text-align:left}.hero{padding:44px 0}}
+.blog-list{list-style:none;padding:0;margin:8px 0 0}
+.blog-item h2{margin-bottom:8px}
+.blog-item h2 a{color:var(--jade-dark);text-decoration:none}
+.blog-item h2 a:hover{color:var(--lotus-dark)}
+.blog-date{color:var(--muted);font-size:.95rem;margin:0 0 12px}
+.blog-item .lede{margin:0 0 16px}
+.post-body{max-width:68ch}
+.post-body h2{font-size:clamp(1.35rem,3vw,1.75rem);margin:32px 0 12px}
+.post-body p,.post-body ul{margin:0 0 16px}
+.post-body ul{padding-left:1.2em}
+.post-body li{margin-bottom:8px}
+.post-back{margin:0 0 20px;font-size:.95rem}
+.disclaimer{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}

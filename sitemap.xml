@@ -20,9 +20,27 @@
   </url>
   <url>
     <loc>https://www.lotusacupuncture.com.au/blog.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lotusacupuncture.com.au/blog/first-acupuncture-appointment.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lotusacupuncture.com.au/blog/does-acupuncture-hurt.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lotusacupuncture.com.au/blog/acupuncture-private-health-insurance-australia.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.lotusacupuncture.com.au/contact.html</loc>
