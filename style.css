@@ -89,9 +89,12 @@ footer{background:rgba(251,238,243,.9)}
 @media(max-width:760px){.aacma-block{flex-direction:column;gap:16px}.aacma-block img{width:130px}}
 
 .insurance{margin-top:48px}
-.fund-badges{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-wrap:wrap;gap:10px}
-.fund-badges li{border:1px solid var(--coral);color:var(--jade-dark);padding:8px 16px;border-radius:999px;font-size:.95rem;background:var(--paper);font-weight:600;letter-spacing:.02em}
-.fund-badges .hicaps-badge{background:var(--mist);border-color:var(--lotus)}
+.fund-logos{list-style:none;padding:0;margin:20px 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.fund-logos li{background:#fff;border:1px solid var(--line);border-radius:12px;height:88px;display:flex;align-items:center;justify-content:center;padding:12px 16px;box-sizing:border-box}
+.fund-logos img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.fund-trademark{margin-top:14px;font-size:.8rem}
+@media(max-width:960px){.fund-logos{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.fund-logos{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.fund-logos li{height:76px;padding:10px 12px;border-radius:10px}}
 
 .footer-creds{display:flex;align-items:center;gap:16px 20px;flex-wrap:wrap}
 .footer-ahpra{text-decoration:none;color:var(--jade-dark)}
