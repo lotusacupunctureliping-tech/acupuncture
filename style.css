@@ -132,3 +132,8 @@ footer{background:rgba(251,238,243,.9)}
 .voucher-terms li{margin-bottom:10px}
 @media(max-width:900px){.voucher-options{grid-template-columns:1fr}}
 @media(max-width:760px){.voucher-lead{grid-template-columns:1fr;gap:24px}}
+.price-group{font:600 1.15rem var(--serif);color:var(--jade-dark);margin:36px 0 0;letter-spacing:.01em}
+.price-groups .price-group:first-child{margin-top:0}
+.price-groups .services-list{margin-top:12px}
+.addon-note{display:inline-block;font-size:.85rem;color:var(--muted);white-space:nowrap}
+@media(min-width:761px){.price-groups .services-list li>.btn,.price-groups .addon-note{min-width:120px;text-align:center;box-sizing:border-box}}
