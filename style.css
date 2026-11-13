@@ -43,7 +43,7 @@ h3{font:600 1.15rem var(--serif);margin:0 0 4px}
 .desc{color:var(--muted);font-size:.95rem;margin:0}
 .meta{text-align:right;font-size:.9rem;color:var(--muted)}
 .price{font:600 1.4rem var(--serif);color:var(--jade-dark);display:block}
-.quote{background:linear-gradient(135deg,#3e2328 0%,#5a2e3c 100%);color:#fff;text-align:center}
+.quote{background:rgba(66,33,40,.72);color:#fff;text-align:center;padding:40px 0}
 .quote blockquote{margin:0 auto 8px;max-width:30ch;font:italic 1.9rem/1.35 var(--serif)}
 .quote cite{font-style:normal;opacity:.8;font-size:.95rem}
 address{font-style:normal;margin:20px 0;line-height:1.8}
@@ -66,7 +66,7 @@ section>.wrap{background:rgba(251,238,243,.9);border-radius:14px;padding-top:36p
 .quote>.wrap{background:transparent}
 .focus>.wrap{background:rgba(246,221,231,.92)}
 footer{background:rgba(251,238,243,.9)}
-@media(max-width:760px){nav a{font-size:1.0625rem}section{padding:40px 0}section>.wrap{border-radius:10px;margin:0 12px}nav{gap:14px}.therapy{grid-template-columns:1fr;gap:16px}.svc-divider{margin:32px 0}.about{grid-template-columns:1fr;gap:32px}.services-list li{grid-template-columns:1fr}.meta{text-align:left}.hero{padding:44px 0}.pagehead{padding:22px 0}}
+@media(max-width:760px){nav a{font-size:1.0625rem}section{padding:40px 0}section>.wrap{border-radius:10px;margin:0 12px}nav{gap:14px}.therapy{grid-template-columns:1fr;gap:16px}.svc-divider{margin:32px 0}.about{grid-template-columns:1fr;gap:32px}.services-list li{grid-template-columns:1fr}.meta{text-align:left}.hero{padding:44px 0}.pagehead{padding:22px 0}.quote{padding:28px 0}}
 .blog-list{list-style:none;padding:0;margin:8px 0 0}
 .blog-item h2{margin-bottom:8px}
 .blog-item h2 a{color:var(--jade-dark);text-decoration:none}
@@ -110,3 +110,22 @@ footer{background:rgba(251,238,243,.9)}
 .footer-ahpra:hover .footer-ahpra-btn{background:var(--lotus-dark)}
 @media(max-width:760px){.footer-creds{width:100%}.footer-ahpra{width:100%}.footer-ahpra-btn{margin-left:46px}}
 .reg-block{margin-top:8px}
+
+.voucher-lead{display:grid;grid-template-columns:1fr minmax(220px,400px);gap:40px 48px;align-items:center}
+.voucher-art{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--line);box-shadow:0 10px 28px rgba(46,26,31,.12);background:#fff}
+.voucher-options{list-style:none;padding:0;margin:36px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.voucher-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px 24px;display:flex;flex-direction:column;align-items:flex-start}
+.voucher-card h3{margin:0 0 6px}
+.voucher-card .meta{text-align:left;margin:0 0 18px}
+.voucher-card .desc{margin:0 0 18px}
+.voucher-card .price{margin:2px 0 0}
+.voucher-card .btn{margin-top:auto}
+.voucher-soon{font-size:.85rem;color:var(--muted);line-height:1.45;margin:12px 0 0}
+.voucher-steps{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:18px}
+.voucher-steps li{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start}
+.voucher-step-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--lotus);color:#fff;font:600 1rem var(--serif);flex-shrink:0}
+.voucher-steps p{margin:4px 0 0}
+.voucher-terms{padding-left:1.2em;margin:8px 0 0;max-width:68ch}
+.voucher-terms li{margin-bottom:10px}
+@media(max-width:900px){.voucher-options{grid-template-columns:1fr}}
+@media(max-width:760px){.voucher-lead{grid-template-columns:1fr;gap:24px}}
