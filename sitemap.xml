@@ -43,6 +43,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.lotusacupuncture.com.au/book.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.lotusacupuncture.com.au/contact.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>

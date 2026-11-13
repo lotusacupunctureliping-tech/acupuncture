@@ -4,6 +4,7 @@
     { "source": "/services{/}?", "destination": "/services.html", "permanent": true },
     { "source": "/blog{/}?", "destination": "/blog.html", "permanent": true },
     { "source": "/contact{/}?", "destination": "/contact.html", "permanent": true },
+    { "source": "/book{/}?", "destination": "/book.html", "permanent": true },
     { "source": "/pricing-plans{/}?", "destination": "/services.html", "permanent": true },
     { "source": "/gift-card{/}?", "destination": "/", "permanent": true },
     { "source": "/podcast{/}?", "destination": "/blog.html", "permanent": true },
