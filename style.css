@@ -114,24 +114,78 @@ footer{background:rgba(251,238,243,.9)}
 @media(max-width:760px){.footer-creds{width:100%}.footer-ahpra{width:100%}.footer-ahpra-btn{margin-left:46px}}
 .reg-block{margin-top:8px}
 
-.voucher-lead{display:grid;grid-template-columns:1fr minmax(220px,400px);gap:40px 48px;align-items:center}
-.voucher-art{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--line);box-shadow:0 10px 28px rgba(46,26,31,.12);background:#fff}
-.voucher-options{list-style:none;padding:0;margin:36px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.voucher-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px 24px;display:flex;flex-direction:column;align-items:flex-start}
-.voucher-card h3{margin:0 0 6px}
-.voucher-card .meta{text-align:left;margin:0 0 18px}
-.voucher-card .desc{margin:0 0 18px}
-.voucher-card .price{margin:2px 0 0}
-.voucher-card .btn{margin-top:auto}
-.voucher-soon{font-size:.85rem;color:var(--muted);line-height:1.45;margin:12px 0 0}
+.voucher-sub{margin:0 0 36px}
+.voucher-layout{display:grid;grid-template-columns:1fr minmax(280px,360px);grid-template-areas:"form preview" "buy preview";gap:32px 48px;align-items:start}
+.voucher-form-col{grid-area:form}
+.voucher-preview-col{grid-area:preview;position:sticky;top:120px}
+.voucher-buy-col{grid-area:buy}
+.voucher-block{margin:0 0 32px}
+.voucher-form-col h2{font:600 1.35rem var(--serif);margin:0 0 14px}
+.voucher-amounts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.voucher-amt{background:#fff;border:2px solid var(--line);border-radius:12px;padding:12px 6px;min-height:48px;font:600 1.05rem var(--serif);color:var(--jade-dark);cursor:pointer;font-family:var(--serif)}
+.voucher-amt:hover{border-color:var(--lotus);color:var(--lotus-dark)}
+.voucher-amt:focus-visible{outline:3px solid var(--lotus);outline-offset:2px}
+.voucher-amt[aria-pressed="true"]{background:var(--lotus);color:#fff;border-color:var(--lotus)}
+.voucher-amt-custom{border-style:dashed;border-color:var(--coral);font-size:.95rem}
+.voucher-amt-custom[aria-pressed="true"]{border-style:dashed}
+.voucher-custom-wrap{margin-top:14px}
+.voucher-custom-wrap label{display:block;font-weight:600;font-size:.95rem;margin-bottom:6px}
+.voucher-custom-input{display:flex;align-items:center;gap:0;max-width:240px;background:#fff;border:1px solid #d9aebf;border-radius:10px;overflow:hidden}
+.voucher-custom-input span{padding:0 0 0 14px;color:var(--muted);font-weight:600}
+.voucher-custom-input input{border:0;width:100%;padding:12px 12px 12px 6px;font:16px/1.4 var(--sans);background:transparent;color:var(--ink)}
+.voucher-custom-input:focus-within{outline:3px solid var(--lotus);outline-offset:1px}
+.voucher-fields-2{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px}
+.voucher-field{margin:0 0 16px}
+.voucher-field label{display:block;font-weight:600;font-size:.95rem;margin-bottom:6px}
+.voucher-optional{font-weight:500;color:var(--muted)}
+.voucher-field input,.voucher-field textarea{display:block;width:100%;font:16px/1.4 var(--sans);padding:12px;border:1px solid #d9aebf;border-radius:10px;background:#fff;color:var(--ink)}
+.voucher-field input:focus,.voucher-field textarea:focus{outline:3px solid var(--lotus);outline-offset:1px}
+.voucher-field input.invalid,.voucher-field textarea.invalid,.voucher-custom-input:has(input.invalid){border-color:#a3122f}
+.voucher-error{color:#a3122f;font-size:.85rem;font-weight:600;margin:8px 0 0}
+.voucher-counter{display:block;text-align:right;font-size:.8rem;color:var(--muted);margin-top:6px}
+.voucher-toggle{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--mist);border:1px solid var(--line);border-radius:999px;padding:4px}
+.voucher-toggle button{border:0;background:transparent;border-radius:999px;padding:10px 12px;font:600 .95rem var(--sans);color:var(--muted);cursor:pointer}
+.voucher-toggle button:hover{color:var(--jade-dark)}
+.voucher-toggle button:focus-visible{outline:3px solid var(--lotus);outline-offset:2px}
+.voucher-toggle button[aria-pressed="true"]{background:var(--lotus);color:#fff}
+.voucher-check{display:flex;gap:10px;align-items:flex-start;font-weight:600;cursor:pointer}
+.voucher-check input{accent-color:var(--lotus);width:20px;height:20px;margin:2px 0 0;flex-shrink:0}
+.voucher-note{color:var(--muted);font-size:.9rem;margin:10px 0 0}
+.voucher-buy{display:block;width:100%;text-align:center;border:0;cursor:pointer;font-family:var(--sans);font-size:1.05rem;padding:15px 24px;box-sizing:border-box}
+.voucher-notice{margin-top:16px;background:#fff;border-left:4px solid var(--lotus);border-radius:6px;padding:16px 18px}
+.voucher-notice p{margin:0 0 10px}
+.voucher-notice p:last-child,.voucher-notice ul:last-child{margin-bottom:0}
+.voucher-notice ul{margin:0;padding-left:1.15em}
+.voucher-notice li{margin:0 0 6px}
+.voucher-preview-card{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 10px 28px rgba(46,26,31,.12);overflow:hidden;padding:0 0 20px}
+.voucher-preview-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:24px 24px 16px;background:linear-gradient(#fff,#fbeef3)}
+.voucher-preview-brand{margin:0;font:600 .72rem/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--lotus)}
+.voucher-preview-title{margin:6px 0 0;font:500 1.85rem/1.1 var(--serif);color:var(--jade-dark);text-transform:uppercase;letter-spacing:.02em}
+.voucher-preview-logo{display:block;height:52px;width:auto;flex-shrink:0}
+.voucher-preview-wave{height:10px;background:linear-gradient(180deg,transparent 40%,var(--lotus) 40%,var(--lotus) 68%,transparent 68%);margin:0 0 8px}
+.voucher-preview-amount{margin:8px 24px 16px;font:600 clamp(2.2rem,5vw,2.8rem)/1 var(--serif);color:var(--jade-dark)}
+.voucher-preview-to,.voucher-preview-from,.voucher-preview-msg{margin:0 24px 8px;color:var(--ink)}
+.voucher-preview-msg{font-style:italic;color:var(--muted);white-space:pre-wrap;word-break:break-word}
+.voucher-preview-from{margin-top:12px}
+.voucher-preview-valid{margin:16px 24px 0;padding-top:12px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
 .voucher-steps{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:18px}
 .voucher-steps li{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start}
 .voucher-step-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--lotus);color:#fff;font:600 1rem var(--serif);flex-shrink:0}
 .voucher-steps p{margin:4px 0 0}
 .voucher-terms{padding-left:1.2em;margin:8px 0 0;max-width:68ch}
 .voucher-terms li{margin-bottom:10px}
-@media(max-width:900px){.voucher-options{grid-template-columns:1fr}}
-@media(max-width:760px){.voucher-lead{grid-template-columns:1fr;gap:24px}}
+.voucher-fields-2:has(.voucher-field[hidden]){grid-template-columns:1fr}
+@media(max-width:900px){
+.voucher-layout{grid-template-columns:1fr;grid-template-areas:"form" "preview" "buy";gap:28px}
+.voucher-preview-col{position:static}
+.voucher-fields-2{grid-template-columns:1fr}
+.voucher-amounts{display:flex;flex-wrap:wrap;gap:8px}
+.voucher-amt{flex:1 1 calc(33.33% - 8px)}
+}
+@media(max-width:760px){
+.voucher-form-col h2{font-size:1.25rem}
+.voucher-preview-title{font-size:1.55rem}
+}
 .price-group{font:600 1.15rem var(--serif);color:var(--jade-dark);margin:36px 0 0;letter-spacing:.01em}
 .price-groups .price-group:first-child{margin-top:0}
 .price-groups .services-list{margin-top:12px}
