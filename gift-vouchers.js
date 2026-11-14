@@ -6,15 +6,15 @@
   // Checkout Session that can also pass buyer and recipient details.
   var STRIPE = {
     links: {
-      50: "",
-      100: "",
-      150: "",
-      200: ""
+      50: "https://buy.stripe.com/bJefZh0QJayMcvT81O1sQ00",
+      100: "https://buy.stripe.com/bJebJ1bvncGU0Nb2Hu1sQ01",
+      150: "https://buy.stripe.com/5kQ28rczr4aodzX0zm1sQ02",
+      200: "https://buy.stripe.com/3cI28r6b38qEcvT95S1sQ03"
     },
-    customLink: ""
+    customLink: "https://buy.stripe.com/cNiaEXczreP2brPeqc1sQ04"
   };
 
-  var MIN_CUSTOM = 10;
+  var MIN_CUSTOM = 20;
   var MAX_CUSTOM = 1000;
   var PHONE_DISPLAY = "0423 031 003";
   var PHONE_TEL = "0423031003";
@@ -153,7 +153,7 @@
       msgEl.textContent = "";
     }
 
-    counter.textContent = message.value.length + " / 500";
+    counter.textContent = message.value.length + " / 255";
 
     if (amount) buyBtn.textContent = "Buy " + formatAUD(amount) + " gift voucher";
     else buyBtn.textContent = "Buy gift voucher";
@@ -357,8 +357,17 @@
     showPhonePlaceholder(data);
   });
 
+  function showThanksIfNeeded() {
+    var params = new URLSearchParams(window.location.search);
+    if (params.get("thanks") !== "1") return;
+    notice.hidden = false;
+    notice.innerHTML = "<p>Thank you. Your payment is complete. Lotus Acupuncture will send your gift voucher shortly.</p>";
+    notice.focus();
+  }
+
   notice.setAttribute("tabindex", "-1");
   updateMode();
   updateSchedule();
   updatePreview();
+  showThanksIfNeeded();
 })();
