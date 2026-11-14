@@ -69,7 +69,7 @@ section>.wrap{background:rgba(251,238,243,.9);border-radius:14px;padding-top:36p
 .quote>.wrap{background:transparent}
 .focus>.wrap{background:rgba(246,221,231,.92)}
 footer{background:rgba(251,238,243,.9)}
-@media(max-width:760px){nav a{font-size:1.0625rem}section{padding:40px 0}section>.wrap{border-radius:10px;margin:0 12px}nav{gap:14px}.therapy{grid-template-columns:1fr;gap:16px}.svc-divider{margin:32px 0}.about{grid-template-columns:1fr;gap:32px}.services-list li{grid-template-columns:1fr}.meta{text-align:left}.hero{padding:44px 0}.pagehead{padding:22px 0}.quote{padding:28px 0}}
+@media(max-width:760px){nav a{font-size:1.0625rem}section{padding:40px 0}section>.wrap{border-radius:10px;margin:0 12px;max-width:calc(100% - 24px)}nav{gap:10px 14px}.therapy{grid-template-columns:1fr;gap:16px}.svc-divider{margin:32px 0}.about{grid-template-columns:1fr;gap:32px}.services-list li{grid-template-columns:1fr}.meta{text-align:left}.hero{padding:44px 0}.pagehead{padding:22px 0}.quote{padding:28px 0}}
 .blog-list{list-style:none;padding:0;margin:8px 0 0}
 .blog-item h2{margin-bottom:8px}
 .blog-item h2 a{color:var(--jade-dark);text-decoration:none}
@@ -115,7 +115,8 @@ footer{background:rgba(251,238,243,.9)}
 .reg-block{margin-top:8px}
 
 .voucher-sub{margin:0 0 36px}
-.voucher-layout{display:grid;grid-template-columns:1fr minmax(280px,360px);grid-template-areas:"form preview" "buy preview";gap:32px 48px;align-items:start}
+.voucher-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,360px);grid-template-areas:"form preview" "buy preview";gap:32px 48px;align-items:start;width:100%;max-width:100%;min-width:0}
+.voucher-form-col,.voucher-preview-col,.voucher-buy-col,.voucher-block,.voucher-fields-2,.voucher-field,.voucher-toggle{min-width:0;max-width:100%}
 .voucher-form-col{grid-area:form}
 .voucher-preview-col{grid-area:preview;position:sticky;top:120px}
 .voucher-buy-col{grid-area:buy}
@@ -132,19 +133,19 @@ footer{background:rgba(251,238,243,.9)}
 .voucher-custom-wrap label{display:block;font-weight:600;font-size:.95rem;margin-bottom:6px}
 .voucher-custom-input{display:flex;align-items:center;gap:0;max-width:240px;background:#fff;border:1px solid #d9aebf;border-radius:10px;overflow:hidden}
 .voucher-custom-input span{padding:0 0 0 14px;color:var(--muted);font-weight:600}
-.voucher-custom-input input{border:0;width:100%;padding:12px 12px 12px 6px;font:16px/1.4 var(--sans);background:transparent;color:var(--ink)}
+.voucher-custom-input input{border:0;box-sizing:border-box;width:100%;max-width:100%;min-width:0;padding:12px 12px 12px 6px;font-size:16px;line-height:1.4;font-family:var(--sans);background:transparent;color:var(--ink)}
 .voucher-custom-input:focus-within{outline:3px solid var(--lotus);outline-offset:1px}
-.voucher-fields-2{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px}
+.voucher-fields-2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 20px}
 .voucher-field{margin:0 0 16px}
 .voucher-field label{display:block;font-weight:600;font-size:.95rem;margin-bottom:6px}
 .voucher-optional{font-weight:500;color:var(--muted)}
-.voucher-field input,.voucher-field textarea{display:block;width:100%;font:16px/1.4 var(--sans);padding:12px;border:1px solid #d9aebf;border-radius:10px;background:#fff;color:var(--ink)}
+.voucher-field input,.voucher-field textarea{display:block;box-sizing:border-box;width:100%;max-width:100%;min-width:0;font-size:16px;line-height:1.4;font-family:var(--sans);padding:12px;border:1px solid #d9aebf;border-radius:10px;background:#fff;color:var(--ink)}
 .voucher-field input:focus,.voucher-field textarea:focus{outline:3px solid var(--lotus);outline-offset:1px}
 .voucher-field input.invalid,.voucher-field textarea.invalid,.voucher-custom-input:has(input.invalid){border-color:#a3122f}
 .voucher-error{color:#a3122f;font-size:.85rem;font-weight:600;margin:8px 0 0}
 .voucher-counter{display:block;text-align:right;font-size:.8rem;color:var(--muted);margin-top:6px}
-.voucher-toggle{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--mist);border:1px solid var(--line);border-radius:999px;padding:4px}
-.voucher-toggle button{border:0;background:transparent;border-radius:999px;padding:10px 12px;font:600 .95rem var(--sans);color:var(--muted);cursor:pointer}
+.voucher-toggle{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4px;background:var(--mist);border:1px solid var(--line);border-radius:999px;padding:4px;width:100%}
+.voucher-toggle button{border:0;background:transparent;border-radius:999px;padding:10px 8px;font:600 .9rem var(--sans);color:var(--muted);cursor:pointer;min-width:0;max-width:100%;white-space:normal}
 .voucher-toggle button:hover{color:var(--jade-dark)}
 .voucher-toggle button:focus-visible{outline:3px solid var(--lotus);outline-offset:2px}
 .voucher-toggle button[aria-pressed="true"]{background:var(--lotus);color:#fff}
@@ -176,11 +177,11 @@ footer{background:rgba(251,238,243,.9)}
 .voucher-terms li{margin-bottom:10px}
 .voucher-fields-2:has(.voucher-field[hidden]){grid-template-columns:1fr}
 @media(max-width:900px){
-.voucher-layout{grid-template-columns:1fr;grid-template-areas:"form" "preview" "buy";gap:28px}
+.voucher-layout{grid-template-columns:minmax(0,1fr);grid-template-areas:"form" "preview" "buy";gap:28px}
 .voucher-preview-col{position:static}
-.voucher-fields-2{grid-template-columns:1fr}
+.voucher-fields-2{grid-template-columns:minmax(0,1fr)}
 .voucher-amounts{display:flex;flex-wrap:wrap;gap:8px}
-.voucher-amt{flex:1 1 calc(33.33% - 8px)}
+.voucher-amt{flex:1 1 calc(33.33% - 8px);min-width:0}
 }
 @media(max-width:760px){
 .voucher-form-col h2{font-size:1.25rem}
