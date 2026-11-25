@@ -192,3 +192,14 @@ footer{background:rgba(251,238,243,.9)}
 .price-groups .services-list{margin-top:12px}
 .addon-note{display:inline-block;font-size:.85rem;color:var(--muted);white-space:nowrap}
 @media(min-width:761px){.price-groups .services-list li>.btn,.price-groups .addon-note{min-width:120px;text-align:center;box-sizing:border-box}}
+
+.svc-callout{background:var(--mist);border-left:4px solid var(--coral);border-radius:8px;padding:16px 20px;margin:0 0 36px;max-width:62ch;min-width:0;box-sizing:border-box}
+.svc-callout p{margin:0;color:var(--ink);font-size:1.05rem;line-height:1.5}
+#moxibustion{scroll-margin-top:120px}
+.price-note{margin-top:16px}
+.addon-section{margin-top:48px;background:var(--mist);border-radius:12px;padding:28px 24px;border-left:4px solid var(--coral);min-width:0;max-width:100%;box-sizing:border-box}
+.addon-section h2{margin-bottom:8px}
+.addon-section>.desc{max-width:62ch;margin:0}
+.addon-section .services-list{margin-top:16px}
+@media(min-width:761px){.addon-section .addon-note{min-width:120px;text-align:center;box-sizing:border-box}}
+@media(max-width:760px){.svc-callout{padding:14px 16px;margin-bottom:28px}.addon-section{padding:20px 16px;border-radius:10px}}
